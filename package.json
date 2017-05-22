@@ -1,0 +1,42 @@
+{
+  "name": "requester_node",
+  "version": "1.0.0",
+  "description": "Node Requester AMQP",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "postinstall": "",
+    "start": "pm2 start pm/dev_ecosystem.config.js",
+    "checkDependencies": "sos-dep-checker"
+  },
+  "engines": {
+    "node": "7.4.0"
+  },
+  "keywords": [
+    "accommodation",
+    "hotel",
+    "requester"
+  ],
+  "jest": {
+    "verbose": true,
+    "globals": {
+      "ENV_NODE": "test"
+    }
+  },
+  "dependencies": {
+    "amqp": "^0.2.6",
+    "request": "^2.81.0",
+    "winston": "^2.3.1",
+    "lynx": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^19.0.2"
+  },
+  "author": "bernardosecades",
+  "license": "ISC"
+}
